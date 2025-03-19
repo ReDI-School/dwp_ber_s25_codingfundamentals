@@ -24,6 +24,7 @@ Division: 2.5
 ## Bonus!
 
 If you'd like to try get a bit more fancy, use the `input()` function to get the user to manually add the two values instead of assigning them to the variables in your code.
+Find out more about the `input()` function by clicking [here](https://www.w3schools.com/python/ref_func_input.asp).
 
 # 2. Modulus and Exponentiation
 
@@ -42,6 +43,7 @@ Number raised to the power of 2: 49
 ## Bonus!
 
 If you'd like to try get a bit more fancy, use the `input()` function to get the user to manually add the two values instead of assigning them to the variables in your code.
+Find out more about the `input()` function by clicking [here](https://www.w3schools.com/python/ref_func_input.asp).
 
 # 3. Odd or Even
 
@@ -57,6 +59,7 @@ The number is even.
 ## Bonus!
 
 If you'd like to try get a bit more fancy, use the `input()` function to get the user to manually add the two values instead of assigning them to the variables in your code.
+Find out more about the `input()` function by clicking [here](https://www.w3schools.com/python/ref_func_input.asp).
 
 # 4. Compare Two Numbers
 
@@ -76,6 +79,7 @@ The second number is greater than the first.
 ## Bonus!
 
 If you'd like to try get a bit more fancy, use the `input()` function to get the user to manually add the two values instead of assigning them to the variables in your code.
+Find out more about the `input()` function by clicking [here](https://www.w3schools.com/python/ref_func_input.asp).
 
 # 5. Print Numbers 1 to 10
 
