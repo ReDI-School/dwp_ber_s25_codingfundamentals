@@ -21,9 +21,12 @@ elif count % 2 != 0:
 # 4. Compare Two Numbers
 first_number = int(input("enter number1 "))
 second_number = int(input("enter number2 "))
-print(first_number > second_number)
-print(second_number > first_number)
-print(first_number == second_number)
+if first_number > second_number:
+    print("The first number is greater than the second number")
+elif second_number > first_number:
+    print("The second number is greater than the first number")
+else:
+    print("The two numbers are equal")
 
 # 5. Print Numbers 1 to 10
 for count1 in range (1, 11):
