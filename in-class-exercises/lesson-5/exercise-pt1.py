@@ -21,8 +21,6 @@ For example, if the character is 'X' and the number is 4, the function should re
 
 # solution for exercise 2 👇🏽
 
-
-
 '''
 EXERCISE 3
 
@@ -31,3 +29,5 @@ This time, modify the function so that, if the given number is bigger than 10, i
 '''
 
 # solution for exercise 3 👇🏽
+
+
