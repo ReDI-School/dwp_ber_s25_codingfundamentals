@@ -23,6 +23,7 @@ count = count_vowel_letters(text)
 
 print(" Count: ", count)
 
+
 # Homework 3: Using results of a function in another function
 print("\n# Homework 3: Using results of a function in another function")
 def sum_of_x_and_y(x ,y):
@@ -42,26 +43,24 @@ divisible_by_3(total)
 # Homework 4: Rock Paper Scissors
 print("\n# Homework 4: Rock Paper Scissors")
 import random
-choices = ("rock = 0", "paper = 1", "scissors = 2")
-user_choice = choices
-computer_choice = random.choice(choices)
-def play_game(user_choice, computer_choice):
-    return computer_choice
-outcome = play_game(user_choice, computer_choice)
-print(outcome)
-if user_choice == computer_choice:
-             print("It's a Tie")
-elif user_choice == 0 and computer_choice == 2:
-            print("You Win")
-elif user_choice == 2 and computer_choice == 1:
-         print("You Win")
-elif user_choice == 1 and computer_choice == 0:
-        print("You Win")
-else:
-        print("You Lose")
-play_game(3, computer_choice)
-play_game(0,computer_choice)
+def play_game(user_choice,):
+    choices = ("rock", "paper" "scissors")
+    computer_choice = random.choice(choices)
 
+    if user_choice == computer_choice:
+             print("It's a Tie")
+    elif user_choice == 0 and computer_choice == 2:
+            print("You Win")
+    elif user_choice == 2 and computer_choice == 1:
+         print("You Win")
+    elif user_choice == 1 and computer_choice == 0:
+        print("You Win")
+    else:
+        print("You Lose")
+while True:
+    player_move = input("Enter your move: ")
+    play_game(player_move)
+    
 
 '''# Rock Paper Scissors Game with Input function
 import random
