@@ -65,18 +65,45 @@ def pick_random_name(list_names):
 
 **Bonus**: Make your code into a function which returns the list of pairs.
 
-
+## Exercise 2: Meal cost calculator
 ### Preparation
-Run the code a few times to understand what is happening. The 'inquire' function will ask 3 questions for each person. You don't need to understand how the 'inquire' function works, you just need to use it. You will be able to select one of two options for each question asked. You will then need to do some calculations based on the result created by the 'inquire' function.
+Run the following code a few times to understand what is happening. The 'inquire' function will ask 3 questions for each person. You don't need to understand how the 'inquire' function works, you just need to use it. You will be able to select one of two options for each question asked. You will then need to do some calculations based on the result created by the 'inquire' function.
 
 ```python
+import inquirer
+import random
+
+def inquire(name):
+  breakfast_base = random.randint(2, 6)
+  lunch_base = random.randint(10, 21)
+  dinner_base = random.randint(30, 51)
+  questions = [
+      inquirer.List(
+          "breakfast",
+          message=f"How much did {name} pay for breakfast? 🥐 ☕",
+          choices=[f"${breakfast_base}", f"${breakfast_base + 2}"],
+      ),
+      inquirer.List(
+          "lunch",
+          message=f"How much did {name} pay for lunch? 🍔",
+          choices=[f"${lunch_base}", f"${lunch_base + 7}"],
+      ),
+        inquirer.List(
+          "dinner",
+          message=f"How much did {name} pay for dinner? 🍽️",
+          choices=[f"${dinner_base}", f"${dinner_base + 15}"],
+      ),
+  ]
+  
+  transactions = inquirer.prompt(questions)
+  return {name: transactions}
+
 people = ["John", "Jane", "Janet"]
-# result = [inquire(person) for person in people]
+result = [inquire(person) for person in people]
 print("Result: ")
-# pprint(result)
+pprint(result)
 ```
 
-## Exercise 2
 Write a function which calculates the sum of the 3 meals for each friend (use the 'result' variable as input to your function).
 
 Example output:
@@ -90,9 +117,10 @@ def convert_dollars(value):
     return number_value
 ```
 **Bonus**: - Replace the value of the name variable with your own name.
-- Run this code a few times and try to understand how the game works to then be 
-able to try and win the game.
-- Slightly change the low and high limit range to make the game easier to win.
+
+## Exercise 4: Meal cost game
+Run this code a few times and try to understand how the game works to then be 
+able to try and win the game. Slightly change the low and high limit range to make the game easier to win.
 
 ```python
 def play_game():
@@ -109,11 +137,11 @@ def play_game():
     else: 
         print("Congrats! You won 👏")
 
-
+# Uncomment the lines below to test your answer 👇👇👇
 # play_game()
 ```
 
-## Exercise 3: Credit Card Masking
+## Exercise 4: Credit Card Masking
 Complete the `mask_credit_card_number` function that takes in a 16-digit credit card number and masks all but the last 4 digits.
 
 ```python
@@ -125,18 +153,8 @@ def mask_credit_card_number(credit_card_number):
     # write your code here!
     return masked_credit_card_number
 
-# Uncomment the lines bellow to test your answer 👇👇👇
+# Uncomment the lines below to test your answer 👇👇👇
 # print('Expected result: ', expected_credit_card_result)
-# print('Your result:')#
-# mask_credit_card_number(sample_credit_card_number)
-
+# result = mask_credit_card_number(sample_credit_card_number)
+# print('Your result:', result)
 ```
-
-
-## Exercise 4: Maximum Number
-Given a list of different numbers, write some code that will print into the console the largest number in the list.
-
-```python
-list_of_numbers = [1, 7, 3, 8, 5, 0]
-```
-
